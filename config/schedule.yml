@@ -1,0 +1,4 @@
+job:
+  cron: "0 5 * * *"
+  class: "ScheduleWorker"
+  queue: schedule

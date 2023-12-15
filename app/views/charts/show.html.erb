@@ -1,0 +1,16 @@
+<div id="chart"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+
+  d3.json("/charts").then(function(data) {
+    var chart = c3.generate({
+      bindto: '#chart',
+      data: {
+        columns: data
+      }
+     });
+
+  });
+});
+</script>
